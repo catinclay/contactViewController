@@ -19,6 +19,12 @@
 		44FFE0D818C58925001C9579 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FFE0C018C58925001C9579 /* UIKit.framework */; };
 		44FFE0E018C58925001C9579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44FFE0DE18C58925001C9579 /* InfoPlist.strings */; };
 		44FFE0E218C58925001C9579 /* contactViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FFE0E118C58925001C9579 /* contactViewControllerTests.m */; };
+		44FFE0EC18C589AF001C9579 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FFE0EB18C589AF001C9579 /* Storyboard.storyboard */; };
+		44FFE0ED18C589AF001C9579 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FFE0EB18C589AF001C9579 /* Storyboard.storyboard */; };
+		44FFE13818C58CA9001C9579 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FFE13718C58CA9001C9579 /* TestTableViewController.m */; };
+		44FFE13918C58CA9001C9579 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FFE13718C58CA9001C9579 /* TestTableViewController.m */; };
+		44FFE13C18C59408001C9579 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FFE13B18C59408001C9579 /* TestViewController.m */; };
+		44FFE13D18C59408001C9579 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FFE13B18C59408001C9579 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,11 @@
 		44FFE0DD18C58925001C9579 /* contactViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "contactViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		44FFE0DF18C58925001C9579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44FFE0E118C58925001C9579 /* contactViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contactViewControllerTests.m; sourceTree = "<group>"; };
+		44FFE0EB18C589AF001C9579 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		44FFE13618C58CA9001C9579 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		44FFE13718C58CA9001C9579 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		44FFE13A18C59408001C9579 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		44FFE13B18C59408001C9579 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,11 @@
 		44FFE0C218C58925001C9579 /* contactViewController */ = {
 			isa = PBXGroup;
 			children = (
+				44FFE13618C58CA9001C9579 /* TestTableViewController.h */,
+				44FFE13718C58CA9001C9579 /* TestTableViewController.m */,
+				44FFE13A18C59408001C9579 /* TestViewController.h */,
+				44FFE13B18C59408001C9579 /* TestViewController.m */,
+				44FFE0EB18C589AF001C9579 /* Storyboard.storyboard */,
 				44FFE0CB18C58925001C9579 /* AppDelegate.h */,
 				44FFE0CC18C58925001C9579 /* AppDelegate.m */,
 				44FFE0CE18C58925001C9579 /* Images.xcassets */,
@@ -221,6 +237,7 @@
 			files = (
 				44FFE0C718C58925001C9579 /* InfoPlist.strings in Resources */,
 				44FFE0CF18C58925001C9579 /* Images.xcassets in Resources */,
+				44FFE0EC18C589AF001C9579 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FFE0E018C58925001C9579 /* InfoPlist.strings in Resources */,
+				44FFE0ED18C589AF001C9579 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FFE13818C58CA9001C9579 /* TestTableViewController.m in Sources */,
 				44FFE0CD18C58925001C9579 /* AppDelegate.m in Sources */,
+				44FFE13C18C59408001C9579 /* TestViewController.m in Sources */,
 				44FFE0C918C58925001C9579 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FFE13D18C59408001C9579 /* TestViewController.m in Sources */,
 				44FFE0E218C58925001C9579 /* contactViewControllerTests.m in Sources */,
+				44FFE13918C58CA9001C9579 /* TestTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

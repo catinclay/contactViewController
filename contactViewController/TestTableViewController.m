@@ -90,7 +90,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSString *object = self.objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
-
+        NSLog(@"DAVID: %@", object);
     }
 }
 
@@ -99,7 +99,6 @@
 {
 
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSLog(@"Waaaaaaa");
 
         NSString *object = self.objects[indexPath.row];
         self.testViewController.detailItem = object;

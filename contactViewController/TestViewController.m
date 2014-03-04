@@ -10,7 +10,7 @@
 
 @interface TestViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-- (void)configureView;
+- (void) configureView;
 @end
 @implementation TestViewController
 - (void) setDetailItem:(id)newNameItem

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSString *databasePath;
+@property (nonatomic) sqlite3 *contactDB;
+
 
 @end

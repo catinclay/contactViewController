@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D1028E18CD3FBE00B44D3C /* henry_head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D1028D18CD3FBE00B44D3C /* henry_head.jpg */; };
+		44D1029418CD485800B44D3C /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D1029318CD485800B44D3C /* Singleton.m */; };
+		44D1029718CD4D8000B44D3C /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D1029618CD4D8000B44D3C /* ContactTableViewCell.m */; };
+		44D1029B18CD524A00B44D3C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D1029918CD524A00B44D3C /* libsqlite3.dylib */; };
+		44D1029F18CD5C0200B44D3C /* connie_head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D1029C18CD5C0200B44D3C /* connie_head.jpg */; };
+		44D102A018CD5C0200B44D3C /* david_head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D1029D18CD5C0200B44D3C /* david_head.jpg */; };
+		44D102A118CD5C0200B44D3C /* zhaonan_head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D1029E18CD5C0200B44D3C /* zhaonan_head.jpg */; };
+		44D102A418CD881600B44D3C /* personObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D102A318CD881600B44D3C /* personObject.m */; };
 		44FFE0BD18C58925001C9579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FFE0BC18C58925001C9579 /* Foundation.framework */; };
 		44FFE0BF18C58925001C9579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FFE0BE18C58925001C9579 /* CoreGraphics.framework */; };
 		44FFE0C118C58925001C9579 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FFE0C018C58925001C9579 /* UIKit.framework */; };
@@ -38,6 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44D1028D18CD3FBE00B44D3C /* henry_head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = henry_head.jpg; sourceTree = SOURCE_ROOT; };
+		44D1029218CD485800B44D3C /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		44D1029318CD485800B44D3C /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		44D1029518CD4D8000B44D3C /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		44D1029618CD4D8000B44D3C /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		44D1029818CD524A00B44D3C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		44D1029918CD524A00B44D3C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		44D1029C18CD5C0200B44D3C /* connie_head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = connie_head.jpg; path = ../../../Desktop/connie_head.jpg; sourceTree = "<group>"; };
+		44D1029D18CD5C0200B44D3C /* david_head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = david_head.jpg; path = ../../../Desktop/david_head.jpg; sourceTree = "<group>"; };
+		44D1029E18CD5C0200B44D3C /* zhaonan_head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zhaonan_head.jpg; path = ../../../Desktop/zhaonan_head.jpg; sourceTree = "<group>"; };
+		44D102A218CD881600B44D3C /* personObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personObject.h; sourceTree = "<group>"; };
+		44D102A318CD881600B44D3C /* personObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personObject.m; sourceTree = "<group>"; };
 		44FFE0B918C58925001C9579 /* contactViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contactViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FFE0BC18C58925001C9579 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44FFE0BE18C58925001C9579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D1029B18CD524A00B44D3C /* libsqlite3.dylib in Frameworks */,
 				44FFE0BF18C58925001C9579 /* CoreGraphics.framework in Frameworks */,
 				44FFE0C118C58925001C9579 /* UIKit.framework in Frameworks */,
 				44FFE0BD18C58925001C9579 /* Foundation.framework in Frameworks */,
@@ -107,6 +128,8 @@
 		44FFE0BB18C58925001C9579 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44D1029818CD524A00B44D3C /* libsqlite3.0.dylib */,
+				44D1029918CD524A00B44D3C /* libsqlite3.dylib */,
 				44FFE0BC18C58925001C9579 /* Foundation.framework */,
 				44FFE0BE18C58925001C9579 /* CoreGraphics.framework */,
 				44FFE0C018C58925001C9579 /* UIKit.framework */,
@@ -118,13 +141,19 @@
 		44FFE0C218C58925001C9579 /* contactViewController */ = {
 			isa = PBXGroup;
 			children = (
+				44D102A218CD881600B44D3C /* personObject.h */,
+				44D102A318CD881600B44D3C /* personObject.m */,
 				44FFE13618C58CA9001C9579 /* TestTableViewController.h */,
 				44FFE13718C58CA9001C9579 /* TestTableViewController.m */,
 				44FFE13A18C59408001C9579 /* TestViewController.h */,
 				44FFE13B18C59408001C9579 /* TestViewController.m */,
+				44D1029518CD4D8000B44D3C /* ContactTableViewCell.h */,
+				44D1029618CD4D8000B44D3C /* ContactTableViewCell.m */,
 				44FFE0EB18C589AF001C9579 /* Storyboard.storyboard */,
 				44FFE0CB18C58925001C9579 /* AppDelegate.h */,
 				44FFE0CC18C58925001C9579 /* AppDelegate.m */,
+				44D1029218CD485800B44D3C /* Singleton.h */,
+				44D1029318CD485800B44D3C /* Singleton.m */,
 				44FFE0CE18C58925001C9579 /* Images.xcassets */,
 				44FFE0C318C58925001C9579 /* Supporting Files */,
 			);
@@ -134,7 +163,11 @@
 		44FFE0C318C58925001C9579 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				44D1029C18CD5C0200B44D3C /* connie_head.jpg */,
+				44D1029D18CD5C0200B44D3C /* david_head.jpg */,
+				44D1029E18CD5C0200B44D3C /* zhaonan_head.jpg */,
 				44FFE0C418C58925001C9579 /* contactViewController-Info.plist */,
+				44D1028D18CD3FBE00B44D3C /* henry_head.jpg */,
 				44FFE0C518C58925001C9579 /* InfoPlist.strings */,
 				44FFE0C818C58925001C9579 /* main.m */,
 				44FFE0CA18C58925001C9579 /* contactViewController-Prefix.pch */,
@@ -235,9 +268,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D1028E18CD3FBE00B44D3C /* henry_head.jpg in Resources */,
 				44FFE0C718C58925001C9579 /* InfoPlist.strings in Resources */,
+				44D102A018CD5C0200B44D3C /* david_head.jpg in Resources */,
 				44FFE0CF18C58925001C9579 /* Images.xcassets in Resources */,
 				44FFE0EC18C589AF001C9579 /* Storyboard.storyboard in Resources */,
+				44D1029F18CD5C0200B44D3C /* connie_head.jpg in Resources */,
+				44D102A118CD5C0200B44D3C /* zhaonan_head.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +296,11 @@
 			files = (
 				44FFE13818C58CA9001C9579 /* TestTableViewController.m in Sources */,
 				44FFE0CD18C58925001C9579 /* AppDelegate.m in Sources */,
+				44D1029718CD4D8000B44D3C /* ContactTableViewCell.m in Sources */,
 				44FFE13C18C59408001C9579 /* TestViewController.m in Sources */,
 				44FFE0C918C58925001C9579 /* main.m in Sources */,
+				44D1029418CD485800B44D3C /* Singleton.m in Sources */,
+				44D102A418CD881600B44D3C /* personObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +505,7 @@
 				44FFE0E718C58925001C9579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44FFE0E818C58925001C9579 /* Build configuration list for PBXNativeTarget "contactViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +514,7 @@
 				44FFE0EA18C58925001C9579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

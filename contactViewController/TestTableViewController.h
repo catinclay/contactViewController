@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
+
 
 @class TestViewController;
 
 
 @interface TestTableViewController : UITableViewController
-@property (nonatomic, retain) NSArray *objects;
+@property (nonatomic, retain) NSMutableArray *objects;
 @property (strong, nonatomic) TestViewController *testViewController;
+
+@property (strong, nonatomic) NSString *databasePath;
+@property (nonatomic) sqlite3 *contactDB;
 
 
 @end

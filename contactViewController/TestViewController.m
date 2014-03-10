@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "personObject.h"
 
 @interface TestViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -22,16 +23,20 @@
         [self configureView];
     }
     
-//    if (self.masterPopoverController != nil) {
-//        [self.masterPopoverController dismissPopoverAnimated:YES];
-//    }
+    if (self.masterPopoverController != nil) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
 }
 
 
 - (void)configureView
 {
     if (self.detailItem) {
-        self.nameLabel.text = _detailItem;
+        self.nameLabel.text = [(personObject *)_detailItem getPersonName] ;
+        self.phoneNumber.text = [(personObject *)_detailItem getPersonPhoneNumber];
+        [self.imageView setImage:[UIImage imageNamed:[(personObject *)_detailItem getPersonImageAddress]]];
+        
+
     }
 }
 - (void)viewDidLoad

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
+
 
 @interface TestViewController : UIViewController <UISplitViewControllerDelegate>
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
+@property (strong, nonatomic) NSString *databasePath;
+@property (nonatomic) sqlite3 *contactDB;
 
 @end

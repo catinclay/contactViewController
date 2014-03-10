@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
 #import "AppDelegate.h"
+
+
 
 int main(int argc, char * argv[])
 {

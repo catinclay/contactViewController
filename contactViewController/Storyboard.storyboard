@@ -8,20 +8,42 @@
         <scene sceneID="uhA-NU-yCy">
             <objects>
                 <tableViewController id="NGV-sH-lIB" customClass="TestTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="o3N-oQ-jTT">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="22" sectionFooterHeight="22" id="o3N-oQ-jTT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="9jt-Eb-ulq">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9jt-Eb-ulq" id="Aal-Sd-EJi">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="127" id="igm-6A-HaU" customClass="ContactTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="igm-6A-HaU" id="tCe-ts-0yW">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="126"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-SE-fXD">
+                                            <rect key="frame" x="20" y="17" width="89" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85U-7e-TBr">
+                                            <rect key="frame" x="117" y="39" width="143" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-e3-9xu">
+                                            <rect key="frame" x="117" y="85" width="150" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="JuR-Ic-4oe" kind="push" identifier="segue_to_detail" id="wbd-0Y-XRj"/>
+                                    <outlet property="nameLabel" destination="85U-7e-TBr" id="aBr-Hg-F96"/>
+                                    <outlet property="personImageView" destination="Cdt-SE-fXD" id="YcO-K6-IYp"/>
+                                    <outlet property="phoneLabel" destination="P1r-e3-9xu" id="3JX-tu-ohS"/>
+                                    <segue destination="JuR-Ic-4oe" kind="push" identifier="segue_to_detail" id="ZPs-Sj-Kxn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -127,7 +149,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="mvL-JH-qex"/>
                     <connections>
+                        <outlet property="imageView" destination="RVz-dH-1oT" id="N53-oz-Drd"/>
                         <outlet property="nameLabel" destination="aGI-LS-B3e" id="e85-xH-MXR"/>
+                        <outlet property="phoneNumber" destination="apU-nn-GUE" id="0g6-EB-iQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsK-qu-Zsf" userLabel="First Responder" sceneMemberID="firstResponder"/>

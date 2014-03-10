@@ -151,6 +151,7 @@
                     <connections>
                         <outlet property="imageView" destination="RVz-dH-1oT" id="N53-oz-Drd"/>
                         <outlet property="nameLabel" destination="aGI-LS-B3e" id="e85-xH-MXR"/>
+                        <outlet property="phoneCallButton" destination="hE9-lK-iC4" id="JCZ-a1-wVD"/>
                         <outlet property="phoneNumber" destination="apU-nn-GUE" id="0g6-EB-iQv"/>
                     </connections>
                 </viewController>

@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
 @property (strong, nonatomic) NSString *databasePath;
 @property (nonatomic) sqlite3 *contactDB;
+@property (weak, nonatomic) IBOutlet UIButton *phoneCallButton;
 
 @end

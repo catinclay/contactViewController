@@ -44,8 +44,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self configureView];
-
+    [_phoneCallButton addTarget:self action:@selector(makePhoneCall) forControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)makePhoneCall{
+    NSString * phoneNumber=[_detailItem getPersonPhoneNumber];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNumber]]];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
